@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../UI/answer_button.dart';
 import '../utils/question.dart';
 import '../utils/quiz.dart';
+import '../UI/question.dart';
 
 class QuizPage extends StatefulWidget {
   @override
@@ -16,15 +17,7 @@ class QuizPageState extends State<QuizPage> {
         new Column( // this is our main Page
         children: <Widget>[
           new AnswerButton(true, () => print("true") ),
-          new Material(
-            color: Colors.white,
-            child: new Padding(
-              padding: new EdgeInsets.symmetric(vertical: 20.0),
-              child: new Center(
-                child: new Text("Statement 1: pizza is nice"),
-              ),
-            ),
-          ),
+          new QuestionText("asdads", 1),
           new AnswerButton(false, () => print("false") )
         ],
         )
