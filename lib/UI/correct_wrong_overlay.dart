@@ -43,7 +43,7 @@ class CorrectWrongOverlayState extends State<CorrectWrongOverlay> with SingleTic
             new Container(
               decoration: new BoxDecoration(color: Colors.white, shape: BoxShape.circle),
               child: new Transform.rotate(
-                angle: _iconAnimation.value * 2 * PI,
+                angle: _iconAnimation.value * 2 * pi,
                 child: new Icon(widget._isCorrect ? Icons.done : Icons.clear, size: _iconAnimation.value * 80.0),
               ),
             ),
